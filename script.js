@@ -50,47 +50,73 @@
 //   person.append(lastName);
 //   person.append(age);
 //   container.append(person);
-// }
-// )
+// });
 
 
 let company = [
   {
-    name: "Hendery",
+    picture: './images/jessi.jpg',
+    name: "Jessi",
+    age: 'Age: 24',
     resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil deleniti distinctio facilis, hic unde quisquam voluptate consequuntur quia nobis nemo repellendus minima dolorum harum excepturi omnis cumque rem commodi.",
-    profession: "Front-end"
+    profession: "Profession: Front-end"
   },
   {
-    name: "YangYang",
+    picture: './images/tae.jpg',
+    name: "Park Jimin",
+    age: 'Age: 22',
     resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil deleniti distinctio facilis, hic unde quisquam voluptate consequuntur quia nobis nemo repellendus minima dolorum harum excepturi omnis cumque rem commodi.",
-    profession: "Java"
+    profession: "Profession: Java"
   },
   {
-    name: "Kun",
+    picture: './images/solar.jpg',
+    name: "Solar",
+    age: 'Age: 25',
     resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil deleniti distinctio facilis, hic unde quisquam voluptate consequuntur quia nobis nemo repellendus minima dolorum harum excepturi omnis cumque rem commodi.",
-    profession: "3D Model"
+    profession: "Profession: 3D Model"
   },
   {
-    name: "Ten",
+    picture: './images/minho.jpg',
+    name: "Lee Minho",
+    age: 'Age: 24',
     resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil deleniti distinctio facilis, hic unde quisquam voluptate consequuntur quia nobis nemo repellendus minima dolorum harum excepturi omnis cumque rem commodi.",
-    profession: "Designer"
+    profession: "Profession: Designer"
   },
 ];
-let container = document.querySelector('#container2');
-container2.style.border = '1px solid black';
-container2.style.padding = '5px';
+const container2 = document.querySelector('#container2');
+container2.style.display = 'flex';
 company.forEach((item) => {
-  let worker = document.createElement('div');
-  worker.style.padding = '3px';
-  let h1 = document.createElement('h1');
-  let p = document.createElement('p');
-  let span = document.createElement('span');
-  let h1 = `${item.name}, `;
-  let p = `${item.resume}, `;
-  let span = item.profession;
+  const worker = document.createElement('div');
+  const img = document.createElement('img');
+  const h1 = document.createElement('h1');
+  const age = document.createElement('span');
+  const p = document.createElement('p');
+  const span = document.createElement('span');
+
+  img.src = item.picture;
+  h1.textContent = item.name;
+  age.textContent = item.age;
+  p.textContent = item.resume;
+  span.textContent = item.profession;
+
+  worker.style.padding = '15px';
+  worker.style.margin = '15px';
+  worker.style.border = '2px solid black';
+  worker.style.borderRadius = '20px';
+  img.style.width = '260px';
+  img.style.height = '260px';
+  img.style.borderRadius = '50%';
+  h1.style.textAlign = 'center';
+  age.style.display = 'block';
+  age.style.marginBottom = '20px';
+  span.style.fontWeight = 'bold';
+  span.style.fontSize = '20px';
+
+  worker.append(img);
   worker.append(h1);
-  worker.append(p);
+  worker.append(age);
   worker.append(span);
+  worker.append(p);
   container2.append(worker);
 }
 )
