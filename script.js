@@ -57,30 +57,30 @@ let company = [
   {
     picture: './images/jessi.jpg',
     name: "Jessi",
-    age: 'Age: 24',
+    age: 'Age: 33',
     resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil deleniti distinctio facilis, hic unde quisquam voluptate consequuntur quia nobis nemo repellendus minima dolorum harum excepturi omnis cumque rem commodi.",
-    profession: "Profession: Front-end"
+    profession: "Profession: Rap-singer"
   },
   {
     picture: './images/tae.jpg',
     name: "Park Jimin",
-    age: 'Age: 22',
+    age: 'Age: 26',
     resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil deleniti distinctio facilis, hic unde quisquam voluptate consequuntur quia nobis nemo repellendus minima dolorum harum excepturi omnis cumque rem commodi.",
-    profession: "Profession: Java"
+    profession: "Profession: Model"
   },
   {
     picture: './images/solar.jpg',
     name: "Solar",
-    age: 'Age: 25',
+    age: 'Age: 29',
     resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil deleniti distinctio facilis, hic unde quisquam voluptate consequuntur quia nobis nemo repellendus minima dolorum harum excepturi omnis cumque rem commodi.",
-    profession: "Profession: 3D Model"
+    profession: "Profession: Singer"
   },
   {
     picture: './images/minho.jpg',
     name: "Lee Minho",
     age: 'Age: 24',
     resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil deleniti distinctio facilis, hic unde quisquam voluptate consequuntur quia nobis nemo repellendus minima dolorum harum excepturi omnis cumque rem commodi.",
-    profession: "Profession: Designer"
+    profession: "Profession: Actor"
   },
 ];
 const container2 = document.querySelector('#container2');
